@@ -1,0 +1,127 @@
+
+
+
+/* title css */
+.title{
+    font-family: Arial, sans-serif;
+    line-height: 3;
+    background-color: #ead8d8;
+    color: #8c8c8c;
+    text-align: center;
+}
+
+/* gallery css */
+.art-item {
+    position: relative;
+    overflow: hidden;
+  }
+
+.art-item img {
+    width: 100%;
+    transition: transform 0.3s ease;
+  }
+
+.art-item:hover img {
+    transform: scale(1.25);
+  }
+  
+  /* Title Effects */
+.art-title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-align: center;
+    padding: 0.5rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+.art-item:hover .art-title {
+    opacity: 1;
+  }
+
+#projects{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(5, 250px);
+    grid-template-rows: repeat(3, 250px);
+    gap: 10px;
+    
+    grid-template-areas:
+    "p1 p1 p1 p2 p3"
+    "p1 p1 p1 p4 p5"
+    "p6 p7 p8 p9 p10";
+}
+
+/* Mobile */
+@media screen and (max-width: 768px){
+    main{
+        padding: 100px 0;
+    }
+    
+    #projects{
+        grid-template-columns: repeat(3, 80px);
+        grid-template-rows: repeat(4, 80px);
+
+        grid-template-areas:
+        "p1 p1 p1"
+        "p1 p1 p1"
+        "p2 p3 p4"
+        "p5 p6 p7"
+        "p8 p9 p10";
+    }
+}
+
+/* Gallery */
+#projects > article:nth-child(1){
+    background-color: #FFC0CB;
+    grid-area: p1;
+}
+
+#projects > article:nth-child(2){
+    background-color: #FFC0CB;
+    grid-area: p2;
+}
+
+#projects > article:nth-child(3){
+    background-color: #FFC0CB;
+    grid-area: p3;
+}
+
+#projects > article:nth-child(4){
+    background-color: #FFC0CB;
+    grid-area: p4;
+}
+
+#projects > article:nth-child(5){
+    background-color: #FFC0CB;
+    grid-area: p5;
+}
+
+#projects > article:nth-child(6){
+    background-color: #FFC0CB;
+    grid-area: p6;
+}
+
+#projects > article:nth-child(7){
+    background-color: #FFC0CB;
+    grid-area: p7;
+}
+
+#projects > article:nth-child(8){
+    background-color: #FFC0CB;
+    grid-area: p8;
+}
+
+#projects > article:nth-child(9){
+    background-color: #FFC0CB;
+    grid-area: p9;
+}
+
+#projects > article:nth-child(10){
+    background-color: #FFC0CB;
+    grid-area: p10;
+}

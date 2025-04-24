@@ -1,0 +1,537 @@
+/* Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Kalnia+Glaze:wght@100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+/* Contact */
+
+/* header */
+header{
+    width: 100vw;
+    /* height: 80px; */
+    border-bottom: 2px solid #FFC0CB;
+    background-color: #FFC0CB;
+
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+}
+
+#logo{
+    display: block;
+    width: 60px;
+    height: 60px;
+    /* background-color: #FFC0CB; */
+    border-radius: 50%;
+
+    margin-left: 35px;
+}
+
+/* nav css */
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    font-family: "Bitter", sans-serif;
+
+}
+
+.navbar-menu{
+    display: flex;
+    padding-left: 0;
+}
+
+.navbar-menu li{
+    padding: 0 20px;
+}
+
+.navbar-togglebtn{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    display: none;
+}
+
+.navbar-menu.active{
+    display: flex;
+}
+
+
+
+/* nav css done */
+
+/* nav{
+    display: flex;
+    gap: 15px;
+    margin-left: 30%;
+} */
+
+/* Basic styling for the navigation menu */
+nav ul> li > a{
+    font-family: "Bitter", sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    color: #fff;
+    font-size: 10px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effect styles */
+nav a.hover-effect {
+    color: #0078ff; /* Change color on hover */
+    font-size: 13px;
+    background-color: #ffe5e5;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+
+
+
+/* main section */
+main{
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+
+/* Hero section */
+#hero{
+    width: 85vw;
+    /* height: calc(100vh - 120px); */
+    /* height: 500px; */
+    aspect-ratio: 3/2;
+
+    overflow: hidden;
+    position: relative;
+}
+
+#hero > img{
+    width: 100%;
+    position: absolute;
+    /* top: -115px; */
+    /* flex-direction: column;
+    object-fit: cover; */
+}
+
+/* form */
+form{
+    flex-direction: column;
+}
+
+
+/* Error styles */
+input.error {
+    border-color: red;
+    background-color: #ffe5e5;
+}
+
+.error-message {
+    display: none;
+    color: red;
+    font-size: 0.875em;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding-top: 2px;
+}
+
+
+
+
+
+
+/* contact*/
+#contact{
+    width: 85vw;
+    height: 70%;
+    /* height: 900px; */
+    background-color: #ffc0cbad;
+
+    margin: auto;
+    flex-direction: column;
+}
+
+#contact > h3{
+    font-size: 32px;
+    color: #fff;
+    font-family: "Bitter", sans-serif;
+    align-items: center;
+
+    margin: 20px 0 20px 43%;
+}
+
+#contact > form{
+    width: 80%;
+    /* width: 400px; */
+    height: 450px;
+    border-color: #ffc0cb;
+
+    margin: auto;
+}
+
+#contact > div{
+    width: 70%;
+    /* width: 400px; */
+    height: 450px;
+    border-color: #ffc0cb;
+
+    margin: auto;
+}
+
+#contact input[type="text"],
+#contact input[type="text2"],
+#contact input[type="email"]{
+    width: 60%;
+    /* width: 300px; */
+    height: 30px;
+    font-family: "Bitter", sans-serif;
+
+    border-color: #ffc0cb;
+}
+
+.ctinfo{
+    float: right;
+}
+
+/* lable */
+label{
+    font-family: "Bitter", sans-serif;
+    color: #fff;
+}
+
+/* legend */
+legend{
+    font-family: "Bitter", sans-serif;
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* fieldset */
+fieldset{
+    margin-bottom: 15px;
+}
+
+/* textarea */
+textarea{
+    width: 90%;
+    height: 200px;
+    /* width: 400px;
+    height: 200px; */
+    resize: none;
+    border-color: #ffc0cb;
+    font-family: "Bitter", sans-serif;
+}
+
+/* footer */
+footer{
+    width: 100vw;
+    height: 80px;
+    background-color: #FFC0CB;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+footer > p{
+    font-family: "Bitter", sans-serif;
+    font-weight: 300;
+    color: #fff;
+    margin-left: 35px;
+}
+
+footer > ul{
+    display: flex;
+    gap: 15px;
+    margin-right: 35px;
+}
+
+footer > ul > li{
+    width: 50px;
+    height: 50px;
+    /* background-color: #fff; */
+}
+
+footer > ul > li > a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+#social{
+    width: 50px;
+    height: 50px;
+    gap: 10px;
+}
+
+
+
+
+.highlight {
+    border-color: #007bff; /* Blue border for focused inputs */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Blue shadow */
+}
+
+label.highlight {
+    color: #007bff; /* Blue label when field is focused */
+}
+
+
+/* logo animation  */
+
+#logo{
+    animation: move-around 5000ms ease-in-out forwards infinite;
+}
+
+/* logo animation */
+@keyframes move-around {
+    0%{
+      transform: translate(0, 0);
+    }
+
+    50%{
+      transform: translate(10px, 0);
+    }
+}
+
+
+/* animation */
+.wrapper {
+    padding: 20px;
+}
+
+.box{
+    opacity: 0;
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.box.load-animation {
+    transform: translateY(50px);
+}
+
+/* Animation when the load-animation class is activated */
+.box.load-animation.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Animation for the box that appears when scrolled into view */
+.box.scroll-animation {
+    transform: translateY(50px);
+}
+
+/* Animation when the scroll-animation class is activated */
+.box.scroll-animation.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
+
+/* Wrapper */
+.wrapper {
+    padding-inline: 10vw;
+}
+
+/* Hero Section */
+#hero2 {
+    width: 85vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+#hero2 > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+/* Profile Section */
+.profile{
+    text-align: center;
+}
+
+.profile h1 {
+    font-size: 50px;
+    color: black;
+    margin-bottom: 20px;
+}
+
+span {
+    color: darksalmon;
+}
+
+.profile p {
+    color: gray;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.top-header{
+    background-color: #FFC0CB;
+    padding: 3rem;
+    border-radius: 15px;
+}
+
+.top-header h1{
+    font-family: "Bitter", sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+    margin: 20px;
+}
+
+.top-header p{
+    font-family: "Bitter", sans-serif;
+    font-weight: 300;
+}
+
+/* Button Styling */
+.profile a {
+    background: black;
+    padding: 10px 18px;
+    text-decoration: none;
+    font-weight: bold;
+    color: ivory;
+    display: inline-block;
+    margin: 30px 0;
+    border-radius: 5px;
+}
+
+/* About Section */
+#home {
+    margin: auto;
+    padding-block: 5em;
+}
+
+.about-info {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 20px;
+    width: 100%;
+    background: #fff;
+    box-shadow: 1px 8px 10px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.about-info p {
+    text-align: center;
+    font-size: 15px;
+    color: #777;
+}
+
+.skills-box {
+    margin: 10px;
+    text-align: center;
+}
+
+.skills-header {
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    text-align: center;
+}
+
+.skills-list div {
+    margin: auto;
+    font-size: 14px;
+    background: #ffafbb;
+    color: #fff;
+    width: 60px;
+    height: 20px;
+    padding: 3px 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Row and Column Layout */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.col {
+    flex: 1;
+    min-width: 200px;
+    margin: 20px;
+}
+
+.col h2{
+    background-color: #FFC0CB;
+    padding: 1rem;
+    font-family: "Bitter", sans-serif;
+    font-weight: 700;
+    text-align: center;
+    border-radius: 15px;
+}
+
+/* Animations */
+@keyframes reveal {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+#ppname, #ppname2 {
+    display: inline-block;
+    animation: reveal 1s cubic-bezier(0.77, 0, 0.175, 1) forwards;
+    font-family: "Bitter", sans-serif;
+    font-weight: 300;
+    color: #333;
+    font-size: 50px;
+}
+
+
+
+/* Responsive Burger Menu */
+@media screen and (max-width: 768px) {
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 8px 24px;
+    }
+
+    .navbar-menu{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .navbar-menu li{
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar-togglebtn{
+        display: block;
+        color: #fff;
+    }
+
+    .navbar-menu.active{
+        display: flex;
+        margin-left: 20px;
+    }
+
+
+}
